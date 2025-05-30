@@ -7,44 +7,49 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5fbff;
+      background-color: #f0f8ff;
       margin: 0;
-      padding: 20px;
-      color: #222;
+      padding: 30px 20px;
+      color: #1a1a1a;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.7;
     }
     h1 {
-      color: #005a9c;
+      color: #004a99;
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1.1px;
     }
     .price {
       text-align: center;
-      font-size: 26px;
+      font-size: 2.4rem;
       font-weight: 700;
-      color: #0077cc;
-      margin-bottom: 25px;
+      color: #007acc;
+      margin-bottom: 40px;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-      margin-bottom: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 45px;
     }
     .gallery a {
       display: block;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       text-decoration: none;
+      background: white;
     }
     .gallery a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transform: scale(1.07);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
     .gallery img {
       width: 100%;
@@ -53,29 +58,29 @@
       display: block;
     }
     .description {
-      font-size: 17px;
-      line-height: 1.5;
+      font-size: 1.25rem;
       max-width: 750px;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 50px auto;
+      color: #222;
       text-align: justify;
-      color: #333;
     }
     .buy-button {
       display: block;
-      width: 220px;
+      width: 240px;
       margin: 0 auto;
-      background-color: #0077cc;
+      background-color: #007acc;
       color: white;
-      font-size: 22px;
-      padding: 15px 0;
-      border-radius: 10px;
+      font-size: 1.6rem;
+      padding: 18px 0;
+      border-radius: 12px;
       text-align: center;
       text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 6px 20px rgba(0,122,204,0.5);
       transition: background-color 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,119,204,0.5);
     }
     .buy-button:hover {
-      background-color: #005fa3;
+      background-color: #005ea3;
     }
   </style>
 </head>
@@ -85,20 +90,18 @@
   <div class="price">Prezzo: 25€</div>
 
   <div class="gallery">
-    <a href="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" target="_blank" rel="noopener noreferrer" aria-label="Immagine pistola ad acqua frontale">
+    <a href="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" target="_blank" rel="noopener noreferrer" aria-label="Pistola ad acqua vista frontale">
       <img src="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" alt="Pistola ad acqua vista frontale" />
     </a>
-    <a href="https://img.kwcdn.com/product/fancy/market/ffc1ca105511a1f71d4af4cae01eea6c.jpg" target="_blank" rel="noopener noreferrer" aria-label="Immagine pistola ad acqua laterale">
+    <a href="https://img.kwcdn.com/product/fancy/market/ffc1ca105511a1f71d4af4cae01eea6c.jpg" target="_blank" rel="noopener noreferrer" aria-label="Pistola ad acqua vista laterale">
       <img src="https://img.kwcdn.com/product/fancy/market/ffc1ca105511a1f71d4af4cae01eea6c.jpg" alt="Pistola ad acqua vista laterale" />
-    </a>
-    <a href="https://img.kwcdn.com/product/fancy/market/381986912.jpg" target="_blank" rel="noopener noreferrer" aria-label="Dettaglio spruzzatore pistola ad acqua">
-      <img src="https://img.kwcdn.com/product/fancy/market/381986912.jpg" alt="Dettaglio spruzzatore pistola ad acqua" />
     </a>
   </div>
 
   <div class="description">
-    <p>Divertiti con la pistola ad acqua elettrica, perfetta per rinfrescare le giornate estive! Con un getto potente che raggiunge fino a 32 piedi, è ideale per giochi all'aperto e feste in spiaggia.</p>
-    <p>Design ergonomico e leggero, facile da usare anche dai più piccoli. Dotata di luci LED colorate per un tocco di divertimento in più anche durante le serate. Realizzata con materiali sicuri e resistenti.</p>
+    <p>Divertiti con la pistola ad acqua elettrica, perfetta per rinfrescare le tue giornate estive! Grazie alla torcia incorporata, non dovrai più preoccuparti della sera: potrai giocare anche al buio in totale sicurezza.</p>
+    <p>Disponibile anche nella colorazione rosa per un tocco di stile in più. Il design ergonomico e leggero la rende facile da usare per grandi e piccini, mentre le luci LED integrate aumentano il divertimento durante le feste in spiaggia o in giardino.</p>
+    <p>Il getto potente raggiunge fino a 32 piedi, garantendo tiri precisi e potenti. Realizzata con materiali sicuri e resistenti per garantirti ore di gioco spensierato.</p>
   </div>
 
   <a class="buy-button" href="mailto:edoardocaner@gmail.com?subject=Acquisto%20Pistola%20ad%20Acqua&body=Salve,%20vorrei%20acquistare%20la%20pistola%20ad%20acqua%20al%20prezzo%20di%2025€." target="_blank" rel="noopener noreferrer">
