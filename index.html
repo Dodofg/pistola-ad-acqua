@@ -3,48 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pistola ad Acqua - Prezzo 25€</title>
+  <title>Pistola ad Acqua Elettrica - Offerta Speciale 25€</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e0f7ff;
-      text-align: center;
-      padding: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e6f7ff;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     h1 {
       color: #0077cc;
+      text-align: center;
+      margin-bottom: 10px;
     }
-    img {
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #888;
-      margin: 20px 0;
-    }
-    p.price {
+    .price {
+      text-align: center;
       font-size: 28px;
-      color: #222;
-      margin: 20px 0;
       font-weight: bold;
+      color: #005a9c;
+      margin-bottom: 30px;
     }
-    a.buy-button {
-      display: inline-block;
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .gallery img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      text-align: justify;
+    }
+    .buy-button {
+      display: block;
+      width: 220px;
+      margin: 0 auto;
       background-color: #0077cc;
       color: white;
       font-size: 22px;
-      padding: 15px 40px;
+      padding: 15px 0;
       border-radius: 10px;
+      text-align: center;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,119,204,0.4);
     }
-    a.buy-button:hover {
+    .buy-button:hover {
       background-color: #005fa3;
+    }
+    /* Lightbox style for image preview */
+    #lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px white;
+    }
+    #lightbox:target {
+      display: flex;
     }
   </style>
 </head>
 <body>
+
   <h1>Pistola ad Acqua Elettrica Giocattolo</h1>
-  <img src="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" alt="Pistola ad acqua elettrica" />
-  <p class="price">Prezzo: 25€</p>
-  <a class="buy-button" href="mailto:edoardocaner@gmail.com?subject=Acquisto%20Pistola%20ad%20Acqua&body=Salve,%20vorrei%20acquistare%20la%20pistola%20ad%20acqua%20al%20prezzo%20di%2025€." target="_blank" rel="noopener noreferrer">Compra ora</a>
+  <div class="price">Prezzo: 25€</div>
+
+  <div class="gallery">
+    <a href="#img1"><img src="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" alt="Pistola ad acqua - vista frontale" /></a>
+    <a href="#img2"><img src="https://img.kwcdn.com/product/fancy/market/ffc1ca105511a1f71d4af4cae01eea6c.jpg" alt="Pistola ad acqua - vista laterale" /></a>
+    <a href="#img3"><img src="https://img.kwcdn.com/product/fancy/market/381986912.jpg" alt="Pistola ad acqua - dettagli spruzzatore" /></a>
+  </div>
+
+  <!-- Lightbox images -->
+  <div id="img1" class="lightbox" aria-hidden="true" tabindex="-1">
+    <a href="#"><img src="https://img.kwcdn.com/product/fancy/market/07c0a3b35e62971155a1f9e4004f5d55_dTVc1L1d6o3Ui.jpg" alt="Pistola ad acqua - vista frontale" /></a>
+  </div>
+  <div id="img2" class="lightbox" aria-hidden="true" tabindex="-1">
+    <a href="#"><img src="https://img.kwcdn.com/product/fancy/market/ffc1ca105511a1f71d4af4cae01eea6c.jpg" alt="Pistola ad acqua - vista laterale" /></a>
+  </div>
+  <div id="img3" class="lightbox" aria-hidden="true" tabindex="-1">
+    <a href="#"><img src="https://img.kwcdn.com/product/fancy/market/381986912.jpg" alt="Pistola ad acqua - dettagli spruzzatore" /></a>
+  </div>
+
+  <div class="description">
+    <p>Questa pistola ad acqua elettrica è il giocattolo perfetto per divertirsi durante le giornate estive! Con una potenza di spruzzatura fino a 32 piedi, garantisce tiri potenti e precisi. Il design ergonomico e leggero la rende facile da maneggiare anche per i bambini. Ideale per feste, giornate in spiaggia o per rinfrescarsi nel giardino di casa.</p>
+    <p>La pistola è dotata di luci LED integrate, che la rendono ancora più divertente durante le serate estive o al buio. Realizzata con materiali sicuri e resistenti, garantisce ore di gioco in totale sicurezza.</p>
+  </div>
+
+  <a class="buy-button" href="mailto:tuoindirizzo@email.com?subject=Acquisto%20Pistola%20ad%20Acqua&body=Salve,%20vorrei%20acquistare%20la%20pistola%20ad%20acqua%20al%20prezzo%20di%2025€." target="_blank" rel="noopener noreferrer">
+    Compra ora
+  </a>
+
 </body>
 </html>
